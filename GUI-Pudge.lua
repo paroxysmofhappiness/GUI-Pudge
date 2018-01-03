@@ -55,6 +55,7 @@ end
 function PE.FakeHook()
 	if	GUI.IsEnabled(PE.Identity)
 		and Pudge.Hero ~= nil
+		and Pudge.Hook ~= nil
 		and PE.NextTime["scary"] == 0
 		and Ability.IsCastable(Pudge.Hook, NPC.GetMana(Pudge.Hero))
 	then
